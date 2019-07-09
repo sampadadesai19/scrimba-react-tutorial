@@ -10,8 +10,23 @@ myNewP.innerHTML = "This is a paragraph."*/
 Render an unordered list to the page. The list should contain 3 list items.
 */
 
-ReactDOM.render(<ul>
+/*ReactDOM.render(<ul>
 <li>Cat</li>
 <li>Dog</li>
 <li>Elephant</li>
-</ul>, document.getElementById('root'));
+</ul>, document.getElementById('root'));*/
+
+//Functional Components
+
+function MyApp() {
+    return (
+    <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+    </ul>);
+}
+
+ReactDOM.render(
+    <MyApp />, document.getElementById("root")
+)
