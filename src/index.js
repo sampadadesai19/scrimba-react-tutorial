@@ -30,3 +30,39 @@ function MyApp() {
 ReactDOM.render(
     <MyApp />, document.getElementById("root")
 )
+
+//Functional Component Practice
+/*Functional Component MyInfo with h1 name, paragraph about self, an ordered or unordered list of top 3 vacation spots
+Add some style
+*/
+
+const headerStyle = {
+    color: 'blue',
+    textAlign: 'center'
+};
+
+const paraStyle = {
+    color: 'gray',
+    size:'12px',
+    textAlign:'center'
+};
+
+const listStyle = {
+    color: 'green',
+}
+function MyInfo() {
+    return (
+    <div>
+        <h1 style={headerStyle}>Sampada Desai</h1>
+        <p style={paraStyle}>I am here to learn React</p>
+        <ol style={listStyle}>
+            <li>Japan</li>
+            <li>Switzerland</li>
+            <li>Australia</li>
+        </ol>
+    </div>);
+}
+
+ReactDOM.render(
+    <MyInfo />, document.getElementById("root")
+)
